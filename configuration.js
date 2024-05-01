@@ -1,7 +1,7 @@
 const mode = 1;
 
 const host_local = "http://localhost:8080";
-const host_remote = "https://flower-shop-backend-4rb5.onrender.com";
+const host_remote = "https://flower-shop-backend-1.onrender.com";
 
 function getHost() {
     return (mode == 1) ? host_local : host_remote;
