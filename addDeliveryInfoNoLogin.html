@@ -148,14 +148,14 @@
         
         let flowerId = flowerInCart.flowerId;
 
-        getTheImage(flowerId).then((testit) => {
-            let url = URL.createObjectURL(testit);
+        getTheImage(flowerId).then((blob) => {
+            let url = URL.createObjectURL(blob);
             document.querySelector("#vertical img").src = url;
         });
         
         async function getTheImage(flowerId) {
             let response = await fetch(host + "/flowers/" + flowerId + "/image");
-            let result = await response.testit();
+            let result = await response.blob();
             return result;
         }
 

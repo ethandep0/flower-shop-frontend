@@ -124,7 +124,7 @@
             let url = URL.createObjectURL(blob);
             document.querySelector("#vertical img").src = url;
         });
-        if (JSON.parse(getThePreviousPage()) === "addDeliveryInfoLogged.html") {
+        if (JSON.parse(getThePreviousPage()) === "addDeliveryInfoIsLogged.html") {
             let item = JSON.parse(getTheItem());
             document.querySelector("#recipientFirstName").value = item.recipientFirstName;
             document.querySelector("#recipientLastName").value = item.recipientLastName;
@@ -174,8 +174,6 @@
             saveTheItem(item);
 
             window.location.href = "placeOrder.html";
-
-
         }
     </script>
     
